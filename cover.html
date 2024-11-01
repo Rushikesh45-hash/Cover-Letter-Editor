@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Editor</title>
+    <link rel="stylesheet" href="cover1.css">
+</head>
+<body>
+
+    <div class="editor-container">
+        <h1>Cover Letter Editor</h1>
+
+        <div class="editor-controls">
+            <!-- Text editing buttons with comfortable labels and uniform size -->
+            <button onclick="formatText('bold')" title="Bold">Bold</button>
+            <button onclick="formatText('italic')" title="Italic">Italic</button>
+            <button onclick="formatText('underline')" title="Underline">Underline</button>
+            <button onclick="formatText('fontSize', '5')" title="Increase Size">Increase Text</button>
+            <button onclick="formatText('fontSize', '3')" title="Decrease Size">Decrease Text</button>
+            <!-- Only Blue Text Color option -->
+            <button onclick="formatText('foreColor', '#0000FF')" title="Blue Text">Blue Text</button>
+        </div>
+        <div class="download-btn"> <button onclick="downloadCoverLetter()" class="download-btn" title="Download Cover Letter">Download</button></div>
+
+        <div id="coverLetter" contenteditable="true" class="cover-letter">
+            Dear [Hiring Manager's Name],
+
+            I am excited to apply for the [Job Title] position at [Company Name]. With a background in [Your Field/Industry] and [X years of experience], I have developed strong skills in [Skill 1, Skill 2, and Skill 3], which align well with the demands of this role. I am confident that my experience in [specific expertise] will bring value to your team.
+            
+            In my previous role at [Previous Company], I successfully [mention a relevant achievement or project, e.g., "increased team productivity by 20%"]. I am driven by innovation and thrive on creating efficient solutions that lead to measurable improvements. I am especially drawn to [Company Name] because of its dedication to [specific company goal or value], which resonates with my professional values.
+            
+            Thank you for considering my application. I look forward to the opportunity to further discuss how my skills and experiences can contribute to your team’s success.
+            
+            Sincerely,
+            [Your Name]
+        </div>
+        
+        
+    </div>
+
+    <script src="cover2.js"></script>
+</body>
+</html>
